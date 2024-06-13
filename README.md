@@ -90,3 +90,4 @@ cd Task1    # or Task2
 > Note: <br>
 > - sample output given is wrong. the correct output is `0 1 0 1` <br>
 > - to generate different inputs everytime you can comment the line `srand(time(0));` in the main function of `input_generator.cpp` file.
+> - it may show warning about `random_shuffle` function. you can ignore that as intended functionality holds.
