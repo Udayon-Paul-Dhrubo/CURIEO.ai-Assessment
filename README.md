@@ -24,6 +24,25 @@ sudo apt-get install g++
 g++ --version
 ```
 
+## Directory Structure
+```
+├── Task1
+│   ├── input_generator.cpp
+│   ├── solution.cpp
+│   ├── input_0.txt     # sample input given in the problem statement
+│   ├── run.sh          # to run the input_generator and solution
+│   └── clean.sh        # to clean the input and output files generated
+│
+├── Task2
+│   ├── input_generator.cpp
+│   ├── solution.cpp
+│   ├── input_0.txt     # sample input given in the problem statement
+│   ├── run.sh          # to run the input_generator and solution
+│   └── clean.sh        # to clean the input and output files generated
+│
+└── curieo_swe_assessment.pdf # problem statement
+```
+
   
 ## Task1
 `all the transactions are given and then all the queries are given`.
@@ -51,7 +70,6 @@ g++ solution.cpp -o solution
 ./clean.sh
 ```
 > Note: <br>
-> - `input_0.txt` is the sample input given in the problem statement. <br>
 > - sample output given is wrong. the correct output is `1 0 1` <br>
 > - `input_5.txt` may take some time to run as it has 10^5 transactions. <br>
 
@@ -83,5 +101,4 @@ g++ solution.cpp -o solution
 ```
 
 > Note: <br>
-> - `input_0.txt` is the sample input given in the problem statement. <br>
 > - sample output given is wrong. the correct output is `0 1 0 1` <br>
