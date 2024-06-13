@@ -36,6 +36,8 @@ to run the input generator:
 cd Task1
 g++ input_generator.cpp -o input_generator
 ```
+> to generate different inputs everytime you can comment the line `srand(time(0));` in the main function of `input_generator.cpp` file.
+
 to run the solution:
 ```bash
 g++ solution.cpp -o solution
@@ -65,6 +67,8 @@ to run the input generator:
 cd Task2
 g++ input_generator.cpp -o input_generator
 ```
+> to generate different inputs everytime you can comment the line `srand(time(0));` in the main function of `input_generator.cpp` file.
+
 to run the solution:
 ```bash
 g++ solution.cpp -o solution
