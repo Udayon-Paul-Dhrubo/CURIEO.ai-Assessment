@@ -8,3 +8,5 @@ do
 done
 
 rm -f "output_0.txt"
+
+rm -rf "log"

@@ -12,3 +12,5 @@ rm -f "output_0.txt"
 # if still exists, remove the compiled files
 rm -f "input_generator"
 rm -f "solution"
+
+rm -rf "log"

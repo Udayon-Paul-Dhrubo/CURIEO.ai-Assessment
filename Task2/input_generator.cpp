@@ -52,6 +52,8 @@ void generateTestFile(const string &filename, int numTransactions, int numQuerie
     // Shuffle the combined list to randomize order
     random_shuffle(combined.begin(), combined.end());
 
+    // shuffle(combined.begin(), combined.end());
+
     // Write the combined list to the file
     for (const auto &line : combined)
     {

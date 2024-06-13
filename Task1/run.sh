@@ -3,34 +3,38 @@
 INPUT_GENERATOR="input_generator.cpp"
 SOLUTION="solution.cpp"
 
-# compile the input_generator.c file
-g++ $INPUT_GENERATOR -o input_generator
+# Compile the input_generator.cpp file
+echo "Compiling $INPUT_GENERATOR..." | tee -a run.log
+g++ $INPUT_GENERATOR -o input_generator 2>&1 | tee -a run.log
 if [ $? -ne 0 ]; then
-    echo "Error compiling input_generator."
+    echo "Error compiling $INPUT_GENERATOR." | tee -a run.log
     exit 1
 fi
 
-# compile the solution.c file
-g++ $SOLUTION -o solution
+# Compile the solution.cpp file
+echo "Compiling $SOLUTION..." | tee -a run.log
+g++ $SOLUTION -o solution 2>&1 | tee -a run.log
 if [ $? -ne 0 ]; then
-    echo "Error compiling solution."
+    echo "Error compiling $SOLUTION." | tee -a run.log
     exit 1
 fi
 
-# run the input generator
-./input_generator
+# Run the input generator
+echo "Running input_generator..." | tee -a run.log
+./input_generator 2>&1 | tee -a run.log
 if [ $? -ne 0 ]; then
-    echo "Error running input_generator."
+    echo "Error running input_generator." | tee -a run.log
     exit 1
 fi
 
-# run the solution
-./solution
+# Run the solution
+echo "Running solution..." | tee -a run.log
+./solution 2>&1 | tee -a run.log
 if [ $? -ne 0 ]; then
-    echo "Error running solution."
+    echo "Error running solution." | tee -a run.log
     exit 1
 fi
 
-# remove the compiled files
-rm -f input_generator
-rm -f solution
+# List generated files
+echo "Listing generated files..." | tee -a run.log
+ls -la | tee -a run.log
