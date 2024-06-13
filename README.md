@@ -1,7 +1,7 @@
 # CURIEO.ai Assessment
 
 ## Problem Statement
-You can find the detailed problem statement in the [problem_statement.pdf](curieo_swe_assessment.pdf) file.
+You can find the detailed problem statement in the [pdf](curieo_swe_assessment.pdf) file.
 
 ## Overview
 - The task is to implement a function that takes a list of `transactions` and a `query` and returns the maximum number of `previously declined` withdrawals that can be approved after `reordering the deposits` in the query range.
